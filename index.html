@@ -4,13 +4,22 @@
 
 <head>
   <title>Etch-a-Scetch</title>
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
   <div id = "container"></div>
 
   <script>
-  
+  var grid = document.createElement("div");
+  var container = document.querySelector("#container");
+
+  grid.className = "grid";
+  container.appendChild(grid);
+  grid.addEventListener("mousover", function(e) {
+    console.log(e);
+  });
+
   </script>
 </body>
 
