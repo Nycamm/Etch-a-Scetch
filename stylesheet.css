@@ -2,8 +2,23 @@
   width: 500px;
   height: 500px;
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
   background-color: red;
   margin: auto;
+}
+
+.cell {
+  grid-row: auto;
+  grid-column: auto;
+}
+
+.cellSwitch {
+  grid-row: auto;
+  grid-column: auto;
+  background-color: blue;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
