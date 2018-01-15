@@ -10,6 +10,7 @@
 <body>
   <div id = "button">
     <button class = "reset" type = "button">Reset</button>
+    <button class = "changeCells" type = "button">Number of Cells</button>
   </div>
   <div id = "container"></div>
 
@@ -17,12 +18,17 @@
   let grid = document.createElement("div");
   let container = document.querySelector("#container");
   let reset = document.querySelector(".reset")
+  let changeCells = document.querySelector(".changeCells");
   let cellNum = 30;
 
   grid.className = "grid";
   grid.style.gridTemplateColumns = "repeat(" + cellNum + ", 1fr)";
   grid.style.gridTemplateRows = "repeat(" + cellNum + ", 1fr)";
   container.appendChild(grid);
+
+  changeCells.addEventListener("click", function(e) {
+    cellNum = prompt("How many rows/columns would you like?", "30");
+  });
 
   for (i = 0; i < (cellNum * cellNum); i++) {
     let cell = document.createElement("div");

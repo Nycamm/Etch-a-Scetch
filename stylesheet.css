@@ -2,8 +2,10 @@
   width: 500px;
   height: 500px;
   display: grid;
-  background-color: red;
+  background-color: white;
   margin: auto;
+  border-style: solid;
+  border-color: black;
 }
 
 .cell {
@@ -14,7 +16,7 @@
 .cellSwitch {
   grid-row: auto;
   grid-column: auto;
-  background-color: blue;
+  background-color: black;
 }
 
 #button {
